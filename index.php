@@ -941,6 +941,7 @@ $canonical = absolute_url(url_for($isNotFound ? 'startseite' : $slug, $currentLa
 $alternateDe = absolute_url(url_for($isNotFound ? 'startseite' : $slug, 'de'));
 $alternateSq = absolute_url(url_for($isNotFound ? 'startseite' : $slug, 'sq'));
 $heroImage = 'images/services/objektschutz.jpg';
+$assetVersion = '20260505-2';
 $whatsappText = rawurlencode($currentLang === 'sq' ? 'Pershendetje Diamant Security, dua te dergoj nje kerkese sigurie.' : 'Hallo Diamant Security, ich möchte eine Sicherheitsanfrage stellen.');
 $whatsappUrl = 'https://wa.me/' . preg_replace('/\D+/', '', $site['whatsapp']) . '?text=' . $whatsappText;
 $mapUrl = 'https://www.google.com/maps/search/?api=1&query=' . rawurlencode($site['street_address']);
@@ -990,7 +991,7 @@ $schema = [
     <meta property="og:image" content="<?= e(absolute_url(asset_url('images/diamant-logo.svg'))); ?>">
     <link rel="preload" href="<?= e(asset_url('images/diamant-logo.svg')); ?>" as="image">
     <link rel="preload" href="<?= e(asset_url($heroImage)); ?>" as="image">
-    <link rel="stylesheet" href="<?= e(asset_url('css/styles.css')); ?>">
+    <link rel="stylesheet" href="<?= e(asset_url('css/styles.css') . '?v=' . $assetVersion); ?>">
     <script type="application/ld+json"><?= json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES); ?></script>
 </head>
 <body>

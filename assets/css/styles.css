@@ -1518,11 +1518,12 @@ em,
     }
 
     .main-nav-bar__inner {
-        min-height: 72px;
+        min-height: 86px;
+        gap: 14px;
     }
 
     .brand__logo {
-        width: 202px;
+        width: clamp(202px, calc(100vw - 132px), 236px);
     }
 
     .language-switcher {
@@ -1579,7 +1580,7 @@ em,
 
 @media (max-width: 640px) {
     .brand__logo {
-        width: 180px;
+        width: clamp(190px, calc(100vw - 126px), 228px);
     }
 
     .hero h1,
