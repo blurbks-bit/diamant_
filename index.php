@@ -2,11 +2,11 @@
 declare(strict_types=1);
 
 $site = [
-    'name' => 'Diamant GmbH',
+    'name' => 'Diamant Security GmbH',
     'brand' => 'Diamant Security',
     'base_url' => 'https://diamantsecurity.de',
-    'location' => 'Deutschlandweit im Einsatz',
-    'street_address' => '',
+    'location' => 'Neckarsulm - Heilbronn, deutschlandweit im Einsatz',
+    'street_address' => 'Kochendorfer Str. 54, 74172 Neckarsulm',
     'phone_display' => '+49 163 9162206',
     'phone_href' => '+491639162206',
     'email' => 'info@diamantsecurity.de',
@@ -18,9 +18,9 @@ $site = [
         'LinkedIn' => 'https://www.linkedin.com/company/diamantsecurity',
     ],
     'legal' => [
-        'company' => 'Diamant GmbH',
-        'address' => '',
-        'representative' => '',
+        'company' => 'Diamant Security GmbH',
+        'address' => 'Kochendorfer Str. 54, 74172 Neckarsulm',
+        'representative' => 'Sheqir Kutllovci',
         'register' => '',
         'vat_id' => '',
         'supervisory_authority' => '',
@@ -77,33 +77,72 @@ $routeAliases = [
     ],
 ];
 
-$cities = ['Deutschlandweit', 'Baden-Württemberg', 'Bayern', 'Hessen', 'Nordrhein-Westfalen', 'Rheinland-Pfalz', 'Saarland', 'Berlin', 'Hamburg', 'Weitere Bundesländer nach Absprache'];
+$cities = ['Neckarsulm', 'Heilbronn', 'Stuttgart', 'München', 'Berlin', 'Hamburg', 'Frankfurt am Main', 'Köln', 'Hannover', 'Dresden', 'Weitere Städte nach Absprache'];
+
+$federalStatesByLang = [
+    'de' => [
+        ['Baden-Württemberg', 'Stuttgart'],
+        ['Bayern', 'München'],
+        ['Berlin', 'Berlin'],
+        ['Brandenburg', 'Potsdam'],
+        ['Bremen', 'Bremen'],
+        ['Hamburg', 'Hamburg'],
+        ['Hessen', 'Frankfurt am Main'],
+        ['Mecklenburg-Vorpommern', 'Rostock'],
+        ['Niedersachsen', 'Hannover'],
+        ['Nordrhein-Westfalen', 'Köln'],
+        ['Rheinland-Pfalz', 'Mainz'],
+        ['Saarland', 'Saarbrücken'],
+        ['Sachsen', 'Dresden'],
+        ['Sachsen-Anhalt', 'Magdeburg'],
+        ['Schleswig-Holstein', 'Kiel'],
+        ['Thüringen', 'Erfurt'],
+    ],
+    'sq' => [
+        ['Baden-Württemberg - Baden-Württemberg', 'Stuttgart'],
+        ['Bavaria - Bayern', 'München'],
+        ['Berlin - Berlin', 'Berlin'],
+        ['Brandenburg - Brandenburg', 'Potsdam'],
+        ['Bremen - Bremen', 'Bremen'],
+        ['Hamburg - Hamburg', 'Hamburg'],
+        ['Hessen - Hessen', 'Frankfurt am Main'],
+        ['Mecklenburg-Vorpommern - Mecklenburg-Vorpommern', 'Rostock'],
+        ['Niedersachsen - Niedersachsen', 'Hannover'],
+        ['Nordrhein-Westfalen - Nordrhein-Westfalen', 'Köln'],
+        ['Rheinland-Pfalz - Rheinland-Pfalz', 'Mainz'],
+        ['Saarland - Saarland', 'Saarbrücken'],
+        ['Sachsen - Sachsen', 'Dresden'],
+        ['Sachsen-Anhalt - Sachsen-Anhalt', 'Magdeburg'],
+        ['Schleswig-Holstein - Schleswig-Holstein', 'Kiel'],
+        ['Thüringen - Thüringen', 'Erfurt'],
+    ],
+];
 
 $servicesByLang = [
     'de' => [
         'veranstaltungsschutz' => [
             'nav' => 'Veranstaltungsschutz',
             'accent' => 'Eventschutz',
-            'metaTitle' => 'Veranstaltungsschutz deutschlandweit - Diamant GmbH',
-            'metaDescription' => 'Veranstaltungsschutz deutschlandweit für Firmenfeiern, Messen, Konzerte, private Feiern und VIP-Bereiche.',
+            'metaTitle' => 'Veranstaltungsschutz deutschlandweit - Diamant Security GmbH',
+            'metaDescription' => 'Veranstaltungsschutz deutschlandweit für Firmenfeiern, Messen, Konzerte, Sportveranstaltungen, öffentliche Aktivitäten und VIP-Bereiche.',
             'title' => 'Veranstaltungsschutz deutschlandweit',
-            'intro' => 'Wir sichern Veranstaltungen mit klarer Einlasskontrolle, Besucherlenkung und ruhiger Präsenz. Der Einsatz wird vorab passend zur Location, Besucherzahl und Risikolage geplant.',
-            'summary' => 'Einlasskontrollen, Besucherlenkung, Ordnerdienste, VIP-Betreuung und Schutz sensibler Bereiche.',
+            'intro' => 'Wir sichern Veranstaltungen, öffentliche Aktivitäten und Sportereignisse mit klarer Einlasskontrolle, Besucherlenkung, Crowd Control und ruhiger Präsenz. Der Einsatz wird vorab passend zur Location, Besucherzahl und Risikolage geplant.',
+            'summary' => 'Einlasskontrollen, Besucherlenkung, Ordnerdienste, Crowd Control, VIP-Betreuung und Schutz sensibler Bereiche.',
             'sections' => [
-                'Geeignet für' => ['Firmenveranstaltungen', 'Messen', 'Konzerte', 'Private Feiern', 'Sportveranstaltungen', 'VIP-Events'],
-                'Leistungen' => ['Einlasskontrolle', 'Besucherlenkung', 'Ordnerdienst', 'Kontrolle sensibler Bereiche', 'Konfliktprävention', 'Notfallunterstützung'],
+                'Geeignet für' => ['Firmenveranstaltungen', 'Messen', 'Konzerte', 'Öffentliche Aktivitäten', 'Sportveranstaltungen wie Fußball und Basketball', 'VIP-Events'],
+                'Leistungen' => ['Einlasskontrolle', 'Besucherlenkung', 'Ordnerdienst', 'Crowd Control', 'Kontrolle sensibler Bereiche', 'Konfliktprävention', 'Notfallunterstützung'],
             ],
-            'outcomes' => ['Geordneter Einlass', 'Ruhige Konfliktprävention', 'Geschützte VIP- und Backstagebereiche'],
+            'outcomes' => ['Geordneter Einlass', 'Ruhige Crowd Control', 'Geschützte VIP- und Backstagebereiche'],
             'cta' => 'Veranstaltungsschutz anfragen',
         ],
         'objektschutz' => [
             'nav' => 'Objektschutz',
             'accent' => 'Objekte',
-            'metaTitle' => 'Objektschutz deutschlandweit - Diamant GmbH',
+            'metaTitle' => 'Objektschutz deutschlandweit - Diamant Security GmbH',
             'metaDescription' => 'Objektschutz deutschlandweit für Firmengebäude, Industrieanlagen, Lagerhallen, Büroflächen und sensible Bereiche.',
             'title' => 'Objektschutz deutschlandweit',
             'intro' => 'Wir schützen Firmenstandorte, Immobilien und sensible Bereiche durch Zugangskontrolle, Kontrollgänge und dokumentierte Sicherheitspräsenz.',
-            'summary' => 'Zuverlässiger Schutz für Firmengebäude, Büroflächen, Industrieanlagen, Lagerhallen und private Objekte.',
+            'summary' => 'Physischer Objektschutz für Firmengebäude, Büroflächen, Industrieanlagen, Lagerhallen und private Objekte.',
             'sections' => [
                 'Geeignet für' => ['Firmengebäude', 'Büroflächen', 'Industrieanlagen', 'Lagerhallen', 'Gewerbeimmobilien', 'Parkflächen'],
                 'Leistungen' => ['Zugangskontrolle', 'Kontrollgänge', 'Nachtbewachung', 'Prävention von Diebstahl und Vandalismus', 'Dokumentation', 'Alarmreaktion nach Vereinbarung'],
@@ -114,7 +153,7 @@ $servicesByLang = [
         'baustellenbewachung' => [
             'nav' => 'Baustellenbewachung',
             'accent' => 'Baustellen',
-            'metaTitle' => 'Baustellenbewachung deutschlandweit - Diamant GmbH',
+            'metaTitle' => 'Baustellenbewachung deutschlandweit - Diamant Security GmbH',
             'metaDescription' => 'Baustellenbewachung deutschlandweit zum Schutz vor Diebstahl, Vandalismus und unbefugtem Zutritt.',
             'title' => 'Baustellenbewachung deutschlandweit',
             'intro' => 'Wir sichern Baustellen, Materiallager und Maschinenbereiche mit geplanter Präsenz, Zugangskontrolle und Kontrollgängen.',
@@ -129,13 +168,13 @@ $servicesByLang = [
         'personenschutz' => [
             'nav' => 'Personenschutz',
             'accent' => 'Diskretion',
-            'metaTitle' => 'Personenschutz deutschlandweit - Diamant GmbH',
+            'metaTitle' => 'Personenschutz deutschlandweit - Diamant Security GmbH',
             'metaDescription' => 'Diskreter Personenschutz deutschlandweit für Unternehmer, Gäste, VIPs und besondere Sicherheitslagen.',
             'title' => 'Personenschutz deutschlandweit',
             'intro' => 'Personenschutz erfordert Diskretion, Vorbereitung und ruhiges Auftreten. Wir planen Begleitung, Wege und Abläufe passend zur Situation.',
-            'summary' => 'Diskreter Schutz für gefährdete Personen, Unternehmer, Gäste, VIPs und besondere Situationen.',
+            'summary' => 'Diskreter Schutz für VIPs, gefährdete Personen, Unternehmer, Gäste und besondere Situationen.',
             'sections' => [
-                'Geeignet für' => ['Unternehmer und Führungskräfte', 'Gäste und VIPs', 'Begleitschutz', 'Vertrauliche Termine', 'Events mit besonderem Schutzbedarf'],
+                'Geeignet für' => ['VIPs und Personen des öffentlichen Lebens', 'Unternehmer und Führungskräfte', 'Gäste mit Schutzbedarf', 'Begleitschutz', 'Vertrauliche Termine', 'Events mit besonderem Schutzbedarf'],
                 'Arbeitsweise' => ['Risikoeinschätzung', 'Diskrete Begleitung', 'Planung von Wegen und Abläufen', 'Professionelles Auftreten', 'Prävention statt Eskalation'],
             ],
             'outcomes' => ['Diskrete Begleitung', 'Risikobewusste Planung', 'Ruhiges Auftreten'],
@@ -144,7 +183,7 @@ $servicesByLang = [
         'empfang-kontrolldienst' => [
             'nav' => 'Empfangs- & Kontrolldienst',
             'accent' => 'Empfang',
-            'metaTitle' => 'Empfangsdienst und Kontrolldienst deutschlandweit - Diamant GmbH',
+            'metaTitle' => 'Empfangsdienst und Kontrolldienst deutschlandweit - Diamant Security GmbH',
             'metaDescription' => 'Empfangs- und Kontrolldienst deutschlandweit für Unternehmen, Veranstaltungen und sensible Standorte.',
             'title' => 'Empfangs- und Kontrolldienst deutschlandweit',
             'intro' => 'Wir verbinden freundlichen Empfang mit klarer Zutrittskontrolle. Besucher, Lieferanten und Gäste werden professionell geführt.',
@@ -159,13 +198,13 @@ $servicesByLang = [
         'revierdienst-streifendienst' => [
             'nav' => 'Revierdienst / Streifendienst',
             'accent' => 'Kontrollgänge',
-            'metaTitle' => 'Revierdienst deutschlandweit - Diamant GmbH',
+            'metaTitle' => 'Revierdienst deutschlandweit - Diamant Security GmbH',
             'metaDescription' => 'Revierdienst und Streifendienst deutschlandweit für regelmäßige Kontrollgänge und Objektprüfungen.',
             'title' => 'Revierdienst und Streifendienst deutschlandweit',
             'intro' => 'Nicht jeder Standort benötigt dauerhafte Bewachung. Revierdienst schafft regelmäßige Kontrolle, sichtbare Prävention und schnelle Meldung bei Auffälligkeiten.',
-            'summary' => 'Regelmäßige Kontrollgänge, Objektprüfungen und Sicherheitsrundgänge zur Prävention von Schäden.',
+            'summary' => 'Regelmäßige Kontrollgänge, Objektprüfungen, Patrouillen und Monitoring zur Prävention von Schäden.',
             'sections' => [
-                'Leistungen' => ['Regelmäßige Kontrollgänge', 'Prüfung von Türen, Toren und Fenstern', 'Außenkontrollen', 'Meldung besonderer Vorkommnisse', 'Dokumentation nach Vereinbarung'],
+                'Leistungen' => ['Regelmäßige Kontrollgänge', 'Prüfung von Türen, Toren und Fenstern', 'Außenkontrollen', 'Patrouillen und Monitoring', 'Meldung besonderer Vorkommnisse', 'Dokumentation nach Vereinbarung'],
                 'Geeignet für' => ['Firmengebäude', 'Lagerflächen', 'Baustellen', 'Parkplätze', 'Immobilien', 'Außenbereiche'],
             ],
             'outcomes' => ['Regelmäßige Kontrollgänge', 'Prävention durch Präsenz', 'Meldung von Auffälligkeiten'],
@@ -176,26 +215,26 @@ $servicesByLang = [
         'veranstaltungsschutz' => [
             'nav' => 'Sigurimi i eventeve',
             'accent' => 'Evente',
-            'metaTitle' => 'Sigurimi i eventeve në Gjermani - Diamant GmbH',
-            'metaDescription' => 'Sigurim profesional për evente, festa biznesi, panaire, koncerte dhe zona VIP në gjithë Gjermaninë.',
+            'metaTitle' => 'Sigurimi i eventeve në Gjermani - Diamant Security GmbH',
+            'metaDescription' => 'Sigurim profesional për evente, aktivitete publike, ndeshje sportive, koncerte dhe zona VIP në gjithë Gjermaninë.',
             'title' => 'Sigurimi i eventeve në Gjermani',
-            'intro' => 'Ne sigurojmë evente me kontroll hyrjeje, orientim të vizitorëve dhe prezencë të qetë. Plani përgatitet sipas lokacionit, numrit të pjesëmarrësve dhe rrezikut.',
-            'summary' => 'Kontroll hyrjeje, orientim vizitorësh, shërbim rregulli, VIP dhe mbrojtje e zonave sensitive.',
+            'intro' => 'Ne sigurojmë evente, aktivitete publike dhe ndeshje sportive me kontroll hyrjeje, orientim të vizitorëve, menaxhim turmash dhe prezencë të qetë. Plani përgatitet sipas lokacionit, numrit të pjesëmarrësve dhe rrezikut.',
+            'summary' => 'Kontroll hyrjeje, orientim vizitorësh, shërbim rregulli, menaxhim turmash, VIP dhe mbrojtje e zonave sensitive.',
             'sections' => [
-                'I përshtatshëm për' => ['Evente biznesi', 'Panaire', 'Koncerte', 'Festa private', 'Evente sportive', 'VIP-evente'],
-                'Shërbimet' => ['Kontroll hyrjeje', 'Orientim vizitorësh', 'Shërbim rregulli', 'Kontroll i zonave sensitive', 'Parandalim konfliktesh', 'Mbështetje në emergjenca'],
+                'I përshtatshëm për' => ['Evente biznesi', 'Panaire', 'Koncerte', 'Aktivitete publike', 'Ndeshje sportive si futboll dhe basketboll', 'VIP-evente'],
+                'Shërbimet' => ['Kontroll hyrjeje', 'Orientim vizitorësh', 'Shërbim rregulli', 'Menaxhim turmash (Crowd Control)', 'Kontroll i zonave sensitive', 'Parandalim konfliktesh', 'Mbështetje në emergjenca'],
             ],
-            'outcomes' => ['Hyrje e organizuar', 'Parandalim i qetë konfliktesh', 'Zona VIP të mbrojtura'],
+            'outcomes' => ['Hyrje e organizuar', 'Menaxhim i qetë i turmave', 'Zona VIP të mbrojtura'],
             'cta' => 'Kërko sigurim eventi',
         ],
         'objektschutz' => [
             'nav' => 'Mbrojtja e objekteve',
             'accent' => 'Objekte',
-            'metaTitle' => 'Mbrojtja e objekteve në Gjermani - Diamant GmbH',
+            'metaTitle' => 'Mbrojtja e objekteve në Gjermani - Diamant Security GmbH',
             'metaDescription' => 'Mbrojtje objektesh në gjithë Gjermaninë për kompani, industri, depo, zyra dhe zona sensitive.',
             'title' => 'Mbrojtja e objekteve në Gjermani',
             'intro' => 'Ne mbrojmë objekte biznesi, prona dhe zona sensitive me kontroll hyrjeje, patrullime dhe prezencë sigurie të dokumentuar.',
-            'summary' => 'Mbrojtje e besueshme për objekte biznesi, zyra, industri, depo dhe objekte private.',
+            'summary' => 'Sigurim fizik i objekteve për kompani, zyra, industri, depo dhe objekte private.',
             'sections' => [
                 'I përshtatshëm për' => ['Objekte biznesi', 'Zyra', 'Objekte industriale', 'Depo', 'Prona komerciale', 'Parkime'],
                 'Shërbimet' => ['Kontroll hyrjeje', 'Patrullime', 'Ruajtje nate', 'Parandalim vjedhjeje dhe vandalizmi', 'Dokumentim', 'Reagim alarmi sipas marrëveshjes'],
@@ -206,7 +245,7 @@ $servicesByLang = [
         'baustellenbewachung' => [
             'nav' => 'Ruajtja e kantiereve',
             'accent' => 'Kantiere',
-            'metaTitle' => 'Ruajtja e kantiereve në Gjermani - Diamant GmbH',
+            'metaTitle' => 'Ruajtja e kantiereve në Gjermani - Diamant Security GmbH',
             'metaDescription' => 'Ruajtje kantieresh në gjithë Gjermaninë kundër vjedhjes, vandalizmit dhe hyrjes së paautorizuar.',
             'title' => 'Ruajtja e kantiereve në Gjermani',
             'intro' => 'Ne sigurojmë kantiere, materiale dhe makineri me prezencë të planifikuar, kontroll hyrjeje dhe patrullime.',
@@ -221,13 +260,13 @@ $servicesByLang = [
         'personenschutz' => [
             'nav' => 'Mbrojtja personale',
             'accent' => 'Diskrecion',
-            'metaTitle' => 'Mbrojtja personale në Gjermani - Diamant GmbH',
+            'metaTitle' => 'Mbrojtja personale në Gjermani - Diamant Security GmbH',
             'metaDescription' => 'Mbrojtje personale diskrete në gjithë Gjermaninë për sipërmarrës, mysafirë, VIP dhe situata të veçanta.',
             'title' => 'Mbrojtja personale në Gjermani',
             'intro' => 'Mbrojtja personale kërkon diskrecion, përgatitje dhe sjellje të qetë. Ne planifikojmë shoqërimin, rrugët dhe procesin sipas situatës.',
-            'summary' => 'Mbrojtje diskrete për persona të rrezikuar, sipërmarrës, mysafirë, VIP dhe situata të veçanta.',
+            'summary' => 'Mbrojtje diskrete për VIP, persona të rrezikuar, sipërmarrës, mysafirë dhe situata të veçanta.',
             'sections' => [
-                'I përshtatshëm për' => ['Sipërmarrës dhe drejtues', 'Mysafirë dhe VIP', 'Shoqërim sigurie', 'Takime konfidenciale', 'Evente me nevojë të veçantë sigurie'],
+                'I përshtatshëm për' => ['VIP dhe persona publikë', 'Sipërmarrës dhe drejtues', 'Mysafirë me nevojë sigurie', 'Shoqërim sigurie', 'Takime konfidenciale', 'Evente me nevojë të veçantë sigurie'],
                 'Mënyra e punës' => ['Vlerësim rreziku', 'Shoqërim diskret', 'Planifikim rrugësh dhe procesesh', 'Sjellje profesionale', 'Parandalim para eskalimit'],
             ],
             'outcomes' => ['Shoqërim diskret', 'Planifikim i kujdesshëm', 'Prezencë e qetë'],
@@ -236,7 +275,7 @@ $servicesByLang = [
         'empfang-kontrolldienst' => [
             'nav' => 'Recepsion & kontroll',
             'accent' => 'Recepsion',
-            'metaTitle' => 'Recepsion dhe kontroll në Gjermani - Diamant GmbH',
+            'metaTitle' => 'Recepsion dhe kontroll në Gjermani - Diamant Security GmbH',
             'metaDescription' => 'Shërbim recepsioni dhe kontrolli në gjithë Gjermaninë për kompani, evente dhe objekte sensitive.',
             'title' => 'Recepsion dhe kontroll në Gjermani',
             'intro' => 'Ne kombinojmë pritje profesionale me kontroll të qartë hyrjeje. Vizitorët, furnitorët dhe mysafirët drejtohen me rregull.',
@@ -251,13 +290,13 @@ $servicesByLang = [
         'revierdienst-streifendienst' => [
             'nav' => 'Patrullim / kontroll',
             'accent' => 'Patrullime',
-            'metaTitle' => 'Patrullim dhe kontroll në Gjermani - Diamant GmbH',
+            'metaTitle' => 'Patrullim dhe kontroll në Gjermani - Diamant Security GmbH',
             'metaDescription' => 'Patrullim dhe kontroll objektesh në gjithë Gjermaninë për inspektime të rregullta dhe parandalim dëmesh.',
             'title' => 'Patrullim dhe kontroll në Gjermani',
             'intro' => 'Jo çdo objekt ka nevojë për ruajtje të përhershme. Patrullimi krijon kontroll të rregullt, parandalim të dukshëm dhe raportim të shpejtë.',
-            'summary' => 'Patrullime të rregullta, kontroll objektesh dhe inspektime sigurie për parandalim dëmesh.',
+            'summary' => 'Patrullime të rregullta, kontroll objektesh dhe monitorim për parandalim dëmesh.',
             'sections' => [
-                'Shërbimet' => ['Patrullime të rregullta', 'Kontroll dyersh, portash dhe dritaresh', 'Kontroll i jashtëm', 'Raportim i incidenteve', 'Dokumentim sipas marrëveshjes'],
+                'Shërbimet' => ['Patrullime të rregullta', 'Kontroll dyersh, portash dhe dritaresh', 'Kontroll i jashtëm', 'Patrullim dhe monitorim', 'Raportim i incidenteve', 'Dokumentim sipas marrëveshjes'],
                 'I përshtatshëm për' => ['Objekte biznesi', 'Depo', 'Kantiere', 'Parkime', 'Prona', 'Hapësira të jashtme'],
             ],
             'outcomes' => ['Kontrolle të rregullta', 'Parandalim me prezencë', 'Raportim i qartë'],
@@ -273,39 +312,39 @@ $copy = [
         'nav' => ['startseite' => 'Startseite', 'ueber-uns' => 'Über uns', 'leistungen' => 'Leistungen', 'einsatzgebiete' => 'Einsatzgebiete', 'karriere' => 'Karriere', 'kontakt' => 'Kontakt'],
         'legal_nav' => ['impressum' => 'Impressum', 'datenschutz' => 'Datenschutz', 'agb' => 'AGB'],
         'meta' => [
-            'startseite' => ['Sicherheitsdienst deutschlandweit - Diamant GmbH', 'Objektschutz, Veranstaltungsschutz, Baustellenbewachung und weitere Sicherheitsdienste deutschlandweit.'],
-            'ueber-uns' => ['Über Diamant GmbH - Sicherheitsdienst deutschlandweit', 'Erfahren Sie mehr über Diamant GmbH, Arbeitsweise, Werte und Sicherheitsverständnis.'],
-            'leistungen' => ['Leistungen - Sicherheitsdienst deutschlandweit | Diamant GmbH', 'Sicherheitsdienstleistungen von Diamant GmbH: Objektschutz, Veranstaltungsschutz, Baustellenbewachung, Personenschutz, Empfang und Revierdienst.'],
-            'einsatzgebiete' => ['Sicherheitsdienst deutschlandweit - Diamant GmbH', 'Diamant GmbH übernimmt Sicherheitsdienstleistungen deutschlandweit und koordiniert Einsätze in allen Bundesländern nach Verfügbarkeit.'],
-            'karriere' => ['Karriere bei Diamant GmbH - Sicherheitsdienst deutschlandweit', 'Jobs im Sicherheitsdienst bei Diamant GmbH für Einsätze in ganz Deutschland.'],
-            'kontakt' => ['Kontakt - Diamant GmbH Sicherheitsdienst deutschlandweit', 'Kontaktieren Sie Diamant GmbH für Sicherheitsdienstleistungen in ganz Deutschland.'],
-            'impressum' => ['Impressum - Diamant GmbH', 'Impressum und Anbieterkennzeichnung der Diamant GmbH.'],
-            'datenschutz' => ['Datenschutz - Diamant GmbH', 'Datenschutzhinweise der Diamant GmbH für Website, Kontaktformular und Kommunikation.'],
-            'agb' => ['AGB - Diamant GmbH', 'Hinweise zu allgemeinen Geschäftsbedingungen und Vertragsgrundlagen der Diamant GmbH.'],
+            'startseite' => ['Sicherheitsdienst Neckarsulm, Heilbronn und deutschlandweit - Diamant Security GmbH', 'Objektschutz, Veranstaltungsschutz, Sportveranstaltungen, Zugangskontrolle, Crowd Control und weitere Sicherheitsdienste deutschlandweit.'],
+            'ueber-uns' => ['Über Diamant Security GmbH - Sicherheitsdienst deutschlandweit', 'Erfahren Sie mehr über Diamant Security GmbH, Arbeitsweise, Werte und Sicherheitsverständnis.'],
+            'leistungen' => ['Leistungen - Sicherheitsdienst deutschlandweit | Diamant Security GmbH', 'Sicherheitsdienstleistungen von Diamant Security GmbH: Objektschutz, Veranstaltungsschutz, Sportveranstaltungen, Baustellenbewachung, Personenschutz, Zugangskontrolle und Revierdienst.'],
+            'einsatzgebiete' => ['Sicherheitsdienst deutschlandweit - Diamant Security GmbH', 'Diamant Security GmbH mit Sitz im Raum Neckarsulm - Heilbronn übernimmt Sicherheitsdienstleistungen deutschlandweit in allen Bundesländern nach Verfügbarkeit.'],
+            'karriere' => ['Karriere bei Diamant Security GmbH - Sicherheitsdienst deutschlandweit', 'Jobs im Sicherheitsdienst bei Diamant Security GmbH für Einsätze in ganz Deutschland.'],
+            'kontakt' => ['Kontakt - Diamant Security GmbH Sicherheitsdienst deutschlandweit', 'Kontaktieren Sie Diamant Security GmbH für Sicherheitsdienstleistungen in ganz Deutschland.'],
+            'impressum' => ['Impressum - Diamant Security GmbH', 'Impressum und Anbieterkennzeichnung der Diamant Security GmbH.'],
+            'datenschutz' => ['Datenschutz - Diamant Security GmbH', 'Datenschutzhinweise der Diamant Security GmbH für Website, Kontaktformular und Kommunikation.'],
+            'agb' => ['AGB - Diamant Security GmbH', 'Hinweise zu allgemeinen Geschäftsbedingungen und Vertragsgrundlagen der Diamant Security GmbH.'],
         ],
         'home' => [
-            'eyebrow' => 'Sicherheitsdienst deutschlandweit',
+            'eyebrow' => 'Sicherheitsdienst Neckarsulm - Heilbronn und deutschlandweit',
             'h1' => 'Objektschutz, Eventschutz und Sicherheitsdienste deutschlandweit',
-            'lead' => 'Diamant GmbH plant und übernimmt Sicherheitseinsätze für Unternehmen, Veranstalter, Baustellen und private Auftraggeber - professionell, diskret und klar organisiert.',
+            'lead' => 'Diamant Security GmbH mit Sitz im Raum Neckarsulm - Heilbronn plant und übernimmt physische Sicherheitseinsätze in ganz Deutschland - professionell, zuverlässig und nach deutschen Standards organisiert.',
             'primary' => 'Sicherheitsanfrage stellen',
             'secondary' => 'Direkt anrufen',
-            'trust' => ['Geschultes Personal', 'Klare Einsatzplanung', 'Deutschlandweit', 'Dokumentation nach Vereinbarung'],
+            'trust' => ['Geschultes Personal', 'Klare Einsatzplanung', 'Alle Bundesländer', '§34a-relevante Sicherheitsarbeit'],
             'assurance_title' => 'Sicherheitsdienst mit klarer Struktur',
-            'assurance_text' => 'Einsatzort, Risiko, Personalbedarf und Ablauf werden vorab abgestimmt. So entsteht ein Einsatz, der ruhig wirkt und zuverlässig funktioniert.',
+            'assurance_text' => 'Einsatzort, Risiko, Personalbedarf und Ablauf werden vorab abgestimmt. So entsteht ein Einsatz, der ruhig wirkt, zuverlässig funktioniert und zu den gesetzlichen Anforderungen des Bewachungsgewerbes passt.',
             'assurance_items' => ['Persönliche Abstimmung', 'Klare Einsatzstruktur', 'Diskrete Umsetzung'],
         ],
         'sections' => [
-            'why_eyebrow' => 'Warum Diamant GmbH?',
+            'why_eyebrow' => 'Warum Diamant Security GmbH?',
             'why_h2' => 'Sicherheit beginnt vor dem Einsatz.',
             'why_text' => 'Wir analysieren Bedarf, Ort und Risiko, bevor Personal eingesetzt wird. Das Ergebnis ist ein strukturierter Sicherheitsdienst mit klaren Aufgaben, Ansprechpartnern und Dokumentation.',
             'services_eyebrow' => 'Leistungen',
-            'services_h2' => 'Sicherheitsdienste für Unternehmen, Events und Objekte',
-            'services_text' => 'Wählen Sie die passende Leistung oder senden Sie eine allgemeine Anfrage. Wir prüfen, welche Lösung für Ihren Einsatz sinnvoll ist.',
+            'services_h2' => 'Sicherheitsdienste für Unternehmen, Events, Sport und Objekte',
+            'services_text' => 'Wählen Sie die passende Leistung oder senden Sie eine allgemeine Anfrage. Wir prüfen, welche Lösung für Ihren Einsatz sinnvoll ist - von Objektschutz über Zugangskontrolle bis Crowd Control.',
             'process_eyebrow' => 'Ablauf',
             'process_h2' => 'Von der Anfrage zum geplanten Einsatz',
             'areas_eyebrow' => 'Einsatzgebiete',
             'areas_h2' => 'Sicherheitsdienst deutschlandweit',
-            'areas_text' => 'Diamant Security koordiniert Einsätze deutschlandweit. Nennen Sie uns Einsatzort, Zeitraum und Leistung, damit wir die Verfügbarkeit prüfen können.',
+            'areas_text' => 'Diamant Security koordiniert Einsätze in allen deutschen Bundesländern mit Fokus auf wirtschaftlich und öffentlich relevante Städte. Nennen Sie uns Einsatzort, Zeitraum und Leistung, damit wir die Verfügbarkeit prüfen können.',
             'faq_eyebrow' => 'FAQ',
             'faq_h2' => 'Häufige Fragen',
             'contact_eyebrow' => 'Kontakt',
@@ -327,19 +366,19 @@ $copy = [
         ],
         'faq' => [
             ['Wie schnell kann ein Einsatz starten?', 'Das hängt von Leistung, Ort und Personalverfügbarkeit ab. Für größere Einsätze empfehlen wir eine frühzeitige Anfrage.'],
-            ['Welche Informationen braucht Diamant GmbH?', 'Wichtig sind Einsatzort, Zeitraum, gewünschte Leistung, Objekt- oder Eventart und besondere Risiken.'],
+            ['Welche Informationen braucht Diamant Security GmbH?', 'Wichtig sind Einsatzort, Zeitraum, gewünschte Leistung, Objekt- oder Eventart und besondere Risiken.'],
             ['Ist auch diskrete Sicherheit möglich?', 'Ja. Auftreten, Kleidung und Positionierung können passend zur Situation abgestimmt werden.'],
             ['Gibt es eine Dokumentation?', 'Nach Vereinbarung können Kontrollgänge, Vorkommnisse oder besondere Beobachtungen dokumentiert werden.'],
         ],
         'about' => [
-            'h1' => 'Über Diamant GmbH',
-            'lead' => 'Diamant GmbH ist ein Sicherheitsdienst mit deutschlandweiter Einsatzbereitschaft. Der Fokus liegt auf geplanter, ruhiger und zuverlässiger Sicherheitsarbeit.',
+            'h1' => 'Über Diamant Security GmbH',
+            'lead' => 'Diamant Security GmbH ist ein Sicherheitsdienst mit Sitz im Raum Neckarsulm - Heilbronn und deutschlandweiter Einsatzbereitschaft. Der Fokus liegt auf geplanter, ruhiger und zuverlässiger Sicherheitsarbeit.',
             'h2' => 'Sicherheit braucht Verantwortung.',
             'text' => 'Wir verstehen Sicherheit nicht als reine Anwesenheit von Personal. Entscheidend sind Vorbereitung, klare Zuständigkeiten, respektvolle Kommunikation und professionelles Verhalten vor Ort.',
             'image_alt' => 'Professionelle Sicherheitsdienstleistung von Diamant Security',
             'intro_cards' => [
                 ['Fachlich geführt', 'Die Expertise unseres Geschäftsführers als Prof. Dr. im Bereich Nationale Sicherheit prägt Analyse, Planung und Verantwortung.'],
-                ['Deutschlandweit', 'Sicherheitsdienste werden nach Einsatzort, Leistungsumfang und Verfügbarkeit koordiniert.'],
+                ['Neckarsulm - Heilbronn', 'Von unserem Sitz im Raum Neckarsulm - Heilbronn koordinieren wir Sicherheitsdienste nach Einsatzort, Leistungsumfang und Verfügbarkeit.'],
                 ['Strukturiert', 'Jeder Einsatz beginnt mit einer klaren Abstimmung zu Aufgabe, Risiko und Ablauf.'],
                 ['Diskret', 'Unser Auftreten passt zur Situation: sichtbar, zurückhaltend oder repräsentativ.'],
             ],
@@ -367,7 +406,8 @@ $copy = [
                 'Klare Kommunikation vor und während des Einsatzes',
                 'Diskrete Arbeitsweise bei sensiblen Situationen',
                 'Dokumentation nach Vereinbarung',
-                'Flexible Einsatzplanung deutschlandweit',
+                'Flexible Einsatzplanung in allen Bundesländern',
+                'Leistungen nach den geltenden gesetzlichen Anforderungen des Bewachungsgewerbes',
                 'Respektvoller Umgang mit Gästen, Kunden und Mitarbeitenden',
             ],
             'values_h2' => 'Werte, die jeden Einsatz prägen',
@@ -378,12 +418,13 @@ $copy = [
         ],
         'areas' => [
             'h1' => 'Sicherheitsdienst deutschlandweit',
-            'lead' => 'Diamant GmbH übernimmt Sicherheitsdienstleistungen in ganz Deutschland. Einsätze werden nach Ort, Zeitraum, Leistungsumfang und Verfügbarkeit koordiniert.',
-            'h2' => 'Städte und Regionen',
+            'lead' => 'Diamant Security GmbH übernimmt Sicherheitsdienstleistungen in ganz Deutschland. Von Neckarsulm - Heilbronn aus koordinieren wir Einsätze nach Ort, Zeitraum, Leistungsumfang und Verfügbarkeit.',
+            'h2' => 'Bundesländer und wichtige Städte',
+            'state_city_label' => 'Stadt',
             'cta' => 'Einsatzort anfragen',
         ],
         'career' => [
-            'h1' => 'Karriere bei Diamant GmbH',
+            'h1' => 'Karriere bei Diamant Security GmbH',
             'lead' => 'Wir suchen zuverlässige, verantwortungsbewusste Mitarbeiter für Einsätze im Sicherheitsdienst deutschlandweit.',
             'who' => 'Wen wir suchen',
             'who_items' => ['Sicherheitsmitarbeiter', 'Objektschutzpersonal', 'Veranstaltungsschutz', 'Empfangs- und Kontrollpersonal', 'Revierfahrer nach Bedarf'],
@@ -392,12 +433,12 @@ $copy = [
             'cta' => 'Jetzt bewerben',
         ],
         'contact' => [
-            'h1' => 'Kontaktieren Sie Diamant GmbH',
+            'h1' => 'Kontaktieren Sie Diamant Security GmbH',
             'lead' => 'Senden Sie Ihre Anfrage oder rufen Sie direkt an. Für eine schnelle Einschätzung helfen Einsatzort, Zeitraum und gewünschte Leistung.',
             'form_h2' => 'Sicherheitsanfrage senden',
             'info_h2' => 'Kontaktinformationen',
             'direct' => 'Direkter Kontakt',
-            'map' => 'Einsatzgebiet Deutschland auf Google Maps öffnen',
+            'map' => 'Standort Neckarsulm auf Google Maps öffnen',
             'response' => 'Schnelle Einschätzung',
             'response_text' => 'Je konkreter Ihre Angaben sind, desto gezielter können wir Personalbedarf und Einsatzform prüfen.',
         ],
@@ -414,7 +455,7 @@ $copy = [
             'urgency_options' => ['Geplant', 'Diese Woche', 'So schnell wie möglich'],
             'callback' => 'Rückruf gewünscht',
             'message' => 'Nachricht *',
-            'privacy' => 'Ich bin einverstanden, dass Diamant GmbH meine Angaben zur Bearbeitung der Anfrage nutzt. Hinweise dazu stehen in der Datenschutzerklärung.',
+            'privacy' => 'Ich bin einverstanden, dass Diamant Security GmbH meine Angaben zur Bearbeitung der Anfrage nutzt. Hinweise dazu stehen in der Datenschutzerklärung.',
             'submit' => 'Anfrage senden',
             'success' => 'Vielen Dank. Ihre Anfrage wurde übermittelt.',
             'fallback' => 'Die Anfrage wurde vorbereitet, konnte aber vom Server nicht versendet werden. Bitte kontaktieren Sie uns direkt per E-Mail oder Telefon.',
@@ -430,7 +471,7 @@ $copy = [
             'agb_h1' => 'Allgemeine Geschäftsbedingungen',
             'provider' => 'Angaben gemäß § 5 DDG',
             'privacy_intro' => 'Diese Datenschutzhinweise erklären, welche personenbezogenen Daten bei Nutzung der Website, des Kontaktformulars und der direkten Kommunikation verarbeitet werden.',
-            'agb_intro' => 'Vertragsbedingungen für Sicherheitsdienstleistungen der Diamant GmbH.',
+            'agb_intro' => 'Vertragsbedingungen für Sicherheitsdienstleistungen der Diamant Security GmbH.',
         ],
         'footer_text' => 'Professionelle Sicherheitsdienstleistungen für Unternehmen, Veranstalter, Baustellen und private Auftraggeber in ganz Deutschland.',
         'not_found' => ['404', 'Diese Seite wurde nicht gefunden.', 'Zur Startseite'],
@@ -441,39 +482,39 @@ $copy = [
         'nav' => ['startseite' => 'Ballina', 'ueber-uns' => 'Rreth nesh', 'leistungen' => 'Shërbimet', 'einsatzgebiete' => 'Zonat', 'karriere' => 'Karriera', 'kontakt' => 'Kontakti'],
         'legal_nav' => ['impressum' => 'Impressum', 'datenschutz' => 'Datenschutz', 'agb' => 'AGB'],
         'meta' => [
-            'startseite' => ['Diamant Security - Shërbime sigurie në Gjermani', 'Mbrojtje objektesh, sigurim eventesh, ruajtje kantieresh dhe shërbime sigurie në gjithë Gjermaninë.'],
-            'ueber-uns' => ['Rreth Diamant GmbH - Siguri në Gjermani', 'Mësoni më shumë për Diamant GmbH, mënyrën e punës dhe vlerat.'],
-            'leistungen' => ['Shërbimet - Diamant Security Gjermani', 'Shërbime sigurie: mbrojtje objektesh, evente, kantiere, mbrojtje personale, recepsion dhe patrullim.'],
-            'einsatzgebiete' => ['Zonat e operimit - Diamant Security', 'Diamant GmbH ofron shërbime sigurie në gjithë Gjermaninë dhe koordinon shërbime sipas vendit dhe disponueshmërisë.'],
-            'karriere' => ['Karriera te Diamant GmbH', 'Punë në sektorin e sigurisë te Diamant GmbH për shërbime në gjithë Gjermaninë.'],
-            'kontakt' => ['Kontakti - Diamant Security Gjermani', 'Kontaktoni Diamant GmbH për shërbime sigurie në gjithë Gjermaninë.'],
-            'impressum' => ['Impressum - Diamant GmbH', 'Të dhënat ligjore të Diamant GmbH.'],
-            'datenschutz' => ['Datenschutz - Diamant GmbH', 'Informacione për mbrojtjen e të dhënave në faqen e Diamant GmbH.'],
-            'agb' => ['AGB - Diamant GmbH', 'Informacione për kushtet e përgjithshme dhe bazat kontraktuale.'],
+            'startseite' => ['Diamant Security - Shërbime sigurie në Gjermani', 'Sigurim fizik objektesh, eventesh, ndeshjesh sportive, kontroll hyrje-dalje, menaxhim turmash dhe shërbime sigurie në gjithë Gjermaninë.'],
+            'ueber-uns' => ['Rreth Diamant Security GmbH - Siguri në Gjermani', 'Mësoni më shumë për Diamant Security GmbH, mënyrën e punës dhe vlerat.'],
+            'leistungen' => ['Shërbimet - Diamant Security Gjermani', 'Shërbime sigurie: sigurim fizik objektesh, evente, ndeshje sportive, kantiere, mbrojtje personale, kontroll hyrje-dalje dhe patrullim.'],
+            'einsatzgebiete' => ['Zonat e operimit - Diamant Security', 'Diamant Security GmbH me seli në zonën Neckarsulm - Heilbronn ofron shërbime sigurie në gjithë Gjermaninë, në të gjitha Bundesländer sipas disponueshmërisë.'],
+            'karriere' => ['Karriera te Diamant Security GmbH', 'Punë në sektorin e sigurisë te Diamant Security GmbH për shërbime në gjithë Gjermaninë.'],
+            'kontakt' => ['Kontakti - Diamant Security Gjermani', 'Kontaktoni Diamant Security GmbH për shërbime sigurie në gjithë Gjermaninë.'],
+            'impressum' => ['Impressum - Diamant Security GmbH', 'Të dhënat ligjore të Diamant Security GmbH.'],
+            'datenschutz' => ['Datenschutz - Diamant Security GmbH', 'Informacione për mbrojtjen e të dhënave në faqen e Diamant Security GmbH.'],
+            'agb' => ['AGB - Diamant Security GmbH', 'Informacione për kushtet e përgjithshme dhe bazat kontraktuale.'],
         ],
         'home' => [
-            'eyebrow' => 'Shërbime sigurie në Gjermani',
+            'eyebrow' => 'Shërbime sigurie Neckarsulm - Heilbronn dhe gjithë Gjermania',
             'h1' => 'Mbrojtje objektesh, evente dhe siguri profesionale',
-            'lead' => 'Diamant GmbH planifikon dhe realizon shërbime sigurie për kompani, evente, kantiere dhe klientë privatë - me qetësi, diskrecion dhe organizim të qartë.',
+            'lead' => 'Diamant Security GmbH me seli në zonën Neckarsulm - Heilbronn planifikon dhe realizon shërbime të sigurisë fizike në gjithë Gjermaninë - me profesionalizëm, besueshmëri dhe standarde gjermane.',
             'primary' => 'Dërgo kërkesë sigurie',
             'secondary' => 'Telefono direkt',
-            'trust' => ['Personel i trajnuar', 'Plan i qartë pune', 'Në gjithë Gjermaninë', 'Dokumentim sipas marrëveshjes'],
+            'trust' => ['Personel i trajnuar', 'Plan i qartë pune', 'Të gjitha Bundesländer', 'Punë sigurie sipas §34a'],
             'assurance_title' => 'Siguri me strukturë të qartë',
-            'assurance_text' => 'Vendndodhja, rreziku, nevoja për personel dhe procesi sqarohen paraprakisht. Kështu shërbimi është i qetë dhe funksional.',
+            'assurance_text' => 'Vendndodhja, rreziku, nevoja për personel dhe procesi sqarohen paraprakisht. Kështu shërbimi është i qetë, funksional dhe i përshtatur me kërkesat ligjore të sektorit të sigurisë.',
             'assurance_items' => ['Koordinim personal', 'Strukturë e qartë shërbimi', 'Zbatim diskret'],
         ],
         'sections' => [
-            'why_eyebrow' => 'Pse Diamant GmbH?',
+            'why_eyebrow' => 'Pse Diamant Security GmbH?',
             'why_h2' => 'Siguria fillon para shërbimit.',
             'why_text' => 'Ne analizojmë nevojën, vendin dhe rrezikun para se të vendoset personeli. Rezultati është një shërbim sigurie me detyra të qarta dhe komunikim profesional.',
             'services_eyebrow' => 'Shërbimet',
-            'services_h2' => 'Shërbime sigurie për kompani, evente dhe objekte',
-            'services_text' => 'Zgjidhni shërbimin e duhur ose dërgoni një kërkesë të përgjithshme. Ne kontrollojmë cila zgjidhje është më e përshtatshme.',
+            'services_h2' => 'Shërbime sigurie për kompani, evente, sport dhe objekte',
+            'services_text' => 'Zgjidhni shërbimin e duhur ose dërgoni një kërkesë të përgjithshme. Ne kontrollojmë cila zgjidhje është më e përshtatshme - nga sigurimi fizik i objekteve deri te kontrolli hyrje-dalje dhe Crowd Control.',
             'process_eyebrow' => 'Procesi',
             'process_h2' => 'Nga kërkesa deri te shërbimi i planifikuar',
             'areas_eyebrow' => 'Zonat',
             'areas_h2' => 'Shërbime sigurie në gjithë Gjermaninë',
-            'areas_text' => 'Diamant Security koordinon shërbime në gjithë Gjermaninë. Na tregoni vendin, periudhën dhe shërbimin që të kontrollojmë disponueshmërinë.',
+            'areas_text' => 'Diamant Security koordinon shërbime në të gjitha Bundesländer të Gjermanisë, me fokus në qytetet kryesore dhe zonat me rëndësi ekonomike e publike. Na tregoni vendin, periudhën dhe shërbimin që të kontrollojmë disponueshmërinë.',
             'faq_eyebrow' => 'FAQ',
             'faq_h2' => 'Pyetje të shpeshta',
             'contact_eyebrow' => 'Kontakti',
@@ -500,14 +541,14 @@ $copy = [
             ['A ka dokumentim?', 'Sipas marrëveshjes mund të dokumentohen patrullimet, incidentet ose vëzhgimet.'],
         ],
         'about' => [
-            'h1' => 'Rreth Diamant GmbH',
-            'lead' => 'Diamant GmbH është kompani sigurie me gatishmëri për shërbime në gjithë Gjermaninë. Fokusi është punë e planifikuar, e qetë dhe e besueshme.',
+            'h1' => 'Rreth Diamant Security GmbH',
+            'lead' => 'Diamant Security GmbH është kompani sigurie me seli në zonën Neckarsulm - Heilbronn dhe me gatishmëri për shërbime në gjithë Gjermaninë. Fokusi është punë e planifikuar, e qetë dhe e besueshme.',
             'h2' => 'Siguria kërkon përgjegjësi.',
             'text' => 'Siguria nuk është vetëm prani fizike. E rëndësishme është përgatitja, ndarja e qartë e përgjegjësive, komunikimi korrekt dhe sjellja profesionale në vend.',
             'image_alt' => 'Shërbim profesional sigurie nga Diamant Security',
             'intro_cards' => [
                 ['Drejtim profesional', 'Ekspertiza e drejtorit tonë si Prof. Dr. i Sigurisë Nacionale ndikon në analizë, planifikim dhe përgjegjësi.'],
-                ['Në gjithë Gjermaninë', 'Shërbimet koordinohen sipas vendit, vëllimit të punës dhe disponueshmërisë.'],
+                ['Neckarsulm - Heilbronn', 'Nga selia në zonën Neckarsulm - Heilbronn koordinojmë shërbime sipas vendit, vëllimit të punës dhe disponueshmërisë.'],
                 ['Me strukturë', 'Çdo shërbim fillon me sqarim të qartë të detyrës, rrezikut dhe procesit.'],
                 ['Diskret', 'Paraqitja përshtatet me situatën: e dukshme, e qetë ose reprezentative.'],
             ],
@@ -535,7 +576,8 @@ $copy = [
                 'Komunikim i qartë para dhe gjatë shërbimit',
                 'Punë diskrete në situata sensitive',
                 'Dokumentim sipas marrëveshjes',
-                'Planifikim fleksibël në gjithë Gjermaninë',
+                'Planifikim fleksibël në të gjitha Bundesländer',
+                'Shërbime sipas kërkesave ligjore gjermane për sektorin e sigurisë',
                 'Sjellje respektuese me mysafirë, klientë dhe punonjës',
             ],
             'values_h2' => 'Vlerat që udhëheqin çdo shërbim',
@@ -546,12 +588,13 @@ $copy = [
         ],
         'areas' => [
             'h1' => 'Shërbime sigurie në gjithë Gjermaninë',
-            'lead' => 'Diamant GmbH ofron shërbime sigurie në gjithë Gjermaninë. Shërbimet koordinohen sipas vendit, periudhës, kërkesës dhe disponueshmërisë.',
-            'h2' => 'Qytetet dhe rajonet',
+            'lead' => 'Diamant Security GmbH ofron shërbime sigurie në gjithë Gjermaninë. Nga zona Neckarsulm - Heilbronn koordinojmë shërbime sipas vendit, periudhës, kërkesës dhe disponueshmërisë.',
+            'h2' => 'Republikat / Bundesländer dhe qytetet kryesore',
+            'state_city_label' => 'Qytet / Stadt',
             'cta' => 'Pyet për lokacionin',
         ],
         'career' => [
-            'h1' => 'Karriera te Diamant GmbH',
+            'h1' => 'Karriera te Diamant Security GmbH',
             'lead' => 'Kërkojmë punonjës të besueshëm dhe të përgjegjshëm për shërbime sigurie në gjithë Gjermaninë.',
             'who' => 'Kë kërkojmë',
             'who_items' => ['Punonjës sigurie', 'Personel për objekte', 'Sigurim eventesh', 'Recepsion dhe kontroll', 'Patrullim sipas nevojës'],
@@ -560,12 +603,12 @@ $copy = [
             'cta' => 'Apliko tani',
         ],
         'contact' => [
-            'h1' => 'Kontaktoni Diamant GmbH',
+            'h1' => 'Kontaktoni Diamant Security GmbH',
             'lead' => 'Dërgoni kërkesën ose telefononi direkt. Për vlerësim të shpejtë na ndihmojnë vendi, periudha dhe shërbimi i kërkuar.',
             'form_h2' => 'Dërgo kërkesë sigurie',
             'info_h2' => 'Informacion kontakti',
             'direct' => 'Kontakt direkt',
-            'map' => 'Hape Gjermaninë në Google Maps',
+            'map' => 'Hape lokacionin në Neckarsulm në Google Maps',
             'response' => 'Vlerësim i shpejtë',
             'response_text' => 'Sa më konkrete të jenë të dhënat, aq më saktë mund të vlerësojmë personelin dhe formën e shërbimit.',
         ],
@@ -582,7 +625,7 @@ $copy = [
             'urgency_options' => ['E planifikuar', 'Këtë javë', 'Sa më shpejt'],
             'callback' => 'Dëshiroj telefonatë',
             'message' => 'Mesazhi *',
-            'privacy' => 'Pajtohem që Diamant GmbH t’i përdorë të dhënat e mia për përpunimin e kërkesës. Informacionet janë te Datenschutz.',
+            'privacy' => 'Pajtohem që Diamant Security GmbH t’i përdorë të dhënat e mia për përpunimin e kërkesës. Informacionet janë te Datenschutz.',
             'submit' => 'Dërgo kërkesën',
             'success' => 'Faleminderit. Kërkesa u dërgua.',
             'fallback' => 'Kërkesa u përgatit, por serveri nuk e dërgoi. Ju lutem kontaktoni direkt me e-mail ose telefon.',
@@ -795,7 +838,8 @@ function render_page_hero(string $eyebrow, string $title, string $lead): void
 
 $tr = $copy[$currentLang];
 $services = $servicesByLang[$currentLang];
-$serviceAreaText = $currentLang === 'sq' ? 'Në gjithë Gjermaninë' : $site['location'];
+$federalStates = $federalStatesByLang[$currentLang];
+$serviceAreaText = $currentLang === 'sq' ? 'Neckarsulm - Heilbronn, në gjithë Gjermaninë' : $site['location'];
 $pageSlugs = array_keys($tr['meta']);
 $knownRoutes = array_merge($pageSlugs, array_keys($services));
 $isNotFound = !in_array($slug, $knownRoutes, true);
@@ -899,7 +943,7 @@ $alternateSq = absolute_url(url_for($isNotFound ? 'startseite' : $slug, 'sq'));
 $heroImage = 'images/services/objektschutz.jpg';
 $whatsappText = rawurlencode($currentLang === 'sq' ? 'Pershendetje Diamant Security, dua te dergoj nje kerkese sigurie.' : 'Hallo Diamant Security, ich möchte eine Sicherheitsanfrage stellen.');
 $whatsappUrl = 'https://wa.me/' . preg_replace('/\D+/', '', $site['whatsapp']) . '?text=' . $whatsappText;
-$mapUrl = 'https://www.google.com/maps/search/?api=1&query=' . rawurlencode('Deutschland');
+$mapUrl = 'https://www.google.com/maps/search/?api=1&query=' . rawurlencode($site['street_address']);
 
 $schema = [
     '@context' => 'https://schema.org',
@@ -908,6 +952,9 @@ $schema = [
     'description' => $metaDescription,
     'address' => [
         '@type' => 'PostalAddress',
+        'streetAddress' => 'Kochendorfer Str. 54',
+        'postalCode' => '74172',
+        'addressLocality' => 'Neckarsulm',
         'addressCountry' => 'DE',
     ],
     'areaServed' => $cities,
@@ -1350,15 +1397,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <?php elseif ($slug === 'einsatzgebiete'): ?>
     <?php render_page_hero($tr['nav']['einsatzgebiete'], $tr['areas']['h1'], $tr['areas']['lead']); ?>
     <section class="section section--light">
-        <div class="container split">
-            <div class="region-panel region-panel--large reveal">
-                <?php foreach ($cities as $city): ?><span><?= e($city); ?></span><?php endforeach; ?>
-            </div>
+        <div class="container">
             <div class="section-copy reveal">
                 <p class="eyebrow"><?= e($tr['sections']['areas_eyebrow']); ?></p>
                 <h2><?= e($tr['areas']['h2']); ?></h2>
                 <p><?= e($tr['sections']['areas_text']); ?></p>
                 <a class="button button--secondary" href="<?= e(url_for('kontakt')); ?>#formular"><?= e($tr['areas']['cta']); ?></a>
+            </div>
+            <div class="state-grid reveal">
+                <?php foreach ($federalStates as $state): ?>
+                    <article class="state-card">
+                        <h3><?= e($state[0]); ?></h3>
+                        <p><?= e($tr['areas']['state_city_label']); ?>: <?= e($state[1]); ?></p>
+                    </article>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
@@ -1510,8 +1562,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p>Wenn Sie das Kontaktformular nutzen, verarbeiten wir die eingegebenen Daten zur Bearbeitung Ihrer Anfrage. Dazu gehören Name, Firma, Telefonnummer, E-Mail-Adresse, gewünschte Leistung, Einsatzort, Zeitraum und Nachricht.</p>
             <h2>Server-Logfiles</h2>
             <p>Beim Aufruf der Website können technische Zugriffsdaten durch den Hostinganbieter verarbeitet werden, etwa IP-Adresse, Zeitpunkt, Browserinformationen und aufgerufene Seiten. Diese Daten dienen dem sicheren Betrieb der Website.</p>
-            <h2>Cookies und externe Dienste</h2>
-            <p>Diese Website setzt derzeit keine Analyse- oder Marketing-Cookies. Google Maps wird nur als externer Link geöffnet und nicht ungefragt eingebettet.</p>
+            <h2>Cookies, Google Tag Manager und Google Analytics 4</h2>
+            <p>Diese Website nutzt Google Tag Manager und Google Analytics 4 zur technischen Einbindung und Auswertung der Websitenutzung. Dabei können Nutzungsdaten, technische Informationen und Cookies verarbeitet werden. Google Maps wird nur als externer Link geöffnet und nicht ungefragt eingebettet.</p>
             <h2>WhatsApp und Social Media</h2>
             <p>Links zu WhatsApp und sozialen Netzwerken führen zu externen Anbietern. Erst beim Anklicken werden Daten an diese Anbieter übertragen.</p>
             <h2>Ihre Rechte</h2>
@@ -1527,6 +1579,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p>Leistungsumfang, Einsatzzeiten, Personalstärke, Vergütung, Dokumentation und besondere Anforderungen werden im Angebot oder Vertrag festgelegt.</p>
             <h2>Leistungserbringung</h2>
             <p>Die Durchführung von Sicherheitsdienstleistungen richtet sich nach dem vereinbarten Einsatzplan und den geltenden gesetzlichen Anforderungen für das Bewachungsgewerbe.</p>
+            <h2>Bewachungsgewerbe</h2>
+            <p>Sicherheitsdienstleistungen werden im Rahmen der einschlägigen gesetzlichen Anforderungen erbracht, insbesondere der Vorgaben für das Bewachungsgewerbe nach § 34a GewO. Behördliche Angaben und Erlaubnisdaten werden, soweit gesetzlich erforderlich, im Impressum geführt.</p>
         </div>
     </section>
 <?php endif; ?>

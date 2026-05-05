@@ -827,6 +827,36 @@ textarea {
     font-weight: 800;
 }
 
+.state-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 34px;
+}
+
+.state-card {
+    min-height: 118px;
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--white);
+    box-shadow: var(--soft-shadow);
+}
+
+.state-card h3 {
+    margin: 0 0 10px;
+    color: var(--ink);
+    font-size: 17px;
+    line-height: 1.25;
+}
+
+.state-card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 750;
+}
+
 .contact-preview {
     color: var(--white);
     background: #171717;
@@ -1464,6 +1494,7 @@ em,
     .outcome-grid,
     .related-services,
     .service-detail,
+    .state-grid,
     .site-footer__grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -1587,6 +1618,7 @@ em,
     .service-detail,
     .region-panel,
     .region-panel--large,
+    .state-grid,
     .form-grid,
     .site-footer__grid {
         grid-template-columns: 1fr;
@@ -1596,6 +1628,7 @@ em,
     .detail-card,
     .outcome-card,
     .related-service,
+    .state-card,
     .contact-card,
     .contact-info,
     .notice-box {
